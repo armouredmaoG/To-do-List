@@ -1,0 +1,167 @@
+html{
+    font-size: 16px;
+    font-family: Garamond, serif;
+}
+
+body{
+    background-color: #C1D0E3; /*May need to change*/
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 4rem;
+    color: #6491c7;
+    border: 1px solid white;
+    text-align: center;
+    width: 60%;
+    margin: 1em auto;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#time{
+    background-color: #8AB0E0;
+    font-size: 1.5rem;
+    color: aliceblue;
+    border: 2px solid white;
+    text-align: center;
+    width: 30%;
+    margin: 1em auto;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+/*header containing buttons*/
+.headerBtns{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 1em auto;
+    gap: 0px 1em;
+    font-size: 2rem;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+/*actual buttons*/
+.headerbtnwithlogos{
+    background-color: #8AB0E0;
+    color: aliceblue;
+    font-family: Garamond, serif;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.1em 1em;
+    border: 2px solid black;
+    transition-duration: 200ms;
+}
+
+.headerbtnwithlogos:hover{
+    background-color: #6491c7;
+    box-shadow: 0 0 0 2px  white, 0 0 0 4px #000;
+}
+
+.btnActive{
+    background-color: #6491c7;
+    font-weight: 800;
+    box-shadow: 2px 2px 0 2px  white, 0 0 0 3px #5A87BE;
+}
+
+
+/*Task container*/
+.add-and-view-task{
+    background-color: #8AB0E0;
+    border: 2px solid white;
+    width: 60%;
+    margin: 1em auto;
+    padding: 1rem 0;
+    min-height: 20vh;
+    min-width: 300px;
+    max-width: 800px;
+    border-radius: 30px;
+}
+
+.tasks, .add-new-task{
+    display: flex;
+    margin: 1em auto;
+    width: 70%;
+    text-align: left;
+    justify-content: center;
+}
+
+label{
+    background-color:#E3DBAA;
+    word-break: break-all;
+    font-size: 1.2rem; /*Changes with device size*/
+    width: 100%;
+    padding: 3%;
+}
+
+input[type=checkbox]{
+    width: 40px;
+    margin-right: 1em;
+}
+
+/*strikethrough when checkboxed is checked*/
+input[type=checkbox]:checked ~ label{
+    color: white;
+    text-decoration: line-through;
+    text-decoration-color: white;
+}
+
+/*Section: Add new task*/
+.add-new-task{
+    justify-content:end;
+}
+
+/*textbox*/
+#new-taskname{
+    font-size: 1rem;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-right: 10px;
+    width: 90%;
+    background-color:transparent;
+}
+
+/**/
+input::placeholder{
+    text-align: center;
+    color: aliceblue;
+    font-family: serif;
+}
+
+/*add task button*/
+#add-task-btn{
+    box-sizing: border-box;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px;
+    color: aliceblue;
+    background-color:#6491c7;
+    border: 1px solid black;
+}
+
+#add-task-btn:hover{
+    background-color: #8AB0E0;
+    box-shadow: 0 0 0 2px  white, 0 0 0 3px #000;
+}
+
+
+/*Mobile devices*/
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 3rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+}
