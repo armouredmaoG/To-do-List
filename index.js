@@ -1,8 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import axios from "axios";
 const app = express();
-
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -17,7 +15,7 @@ app.get("/", async (req, res)=>{
     res.render("index.ejs", {activeButton: "daily",tasks: todayTask});
 });
 
-//show the daily task when current active button is "daily"
+//show the daily task when H active button is "daily"
 app.get("/daily", (req, res)=>{
     res.render("index.ejs", {activeButton: "daily",tasks: todayTask});;
 });
