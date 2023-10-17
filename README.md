@@ -19,7 +19,6 @@ A To-do List Web Application to add tasks and strike tasks that has been complet
 
 ```
 $ npm install ejs express body-parser
-
 ```
 
 ## Running the application
@@ -27,9 +26,7 @@ $ npm install ejs express body-parser
 Runs on `localhost: 3000`
 
 ```
-
 $ node index.js
-
 ```
 
 # Technologies used
@@ -39,3 +36,5 @@ $ node index.js
 - JavaScript
 - Express.js
 - Node.js
+
+# Screenshots
